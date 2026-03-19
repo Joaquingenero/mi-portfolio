@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portfolio Profesional</title>
+    <title>Portfolio Profesional - Desarrollador Ficticio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
     <header>
-        <h1>Nombre del Desarrollador</h1>
-        <p>Desarrollador Full Stack / Especialista en Frontend</p>
-        <img src="Imagen/mi foto.jpg" alt="Foto de perfil" width="150">
+        <h1>Juan Pérez</h1> <p>Desarrollador Web Full Stack Junior</p> [cite: 10]
+        <img src="Imagen/mi-foto.jpg" alt="Foto de perfil de Juan Pérez" width="150"> [cite: 12]
     </header>
 
     <nav>
         <ul>
             <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
@@ -25,22 +25,65 @@
     <main>
         <section id="sobre-mi">
             <h2>Sobre mí</h2>
-            <p>Soy un apasionado por la tecnología con experiencia en crear soluciones digitales...</p>
+            <p>Soy un entusiasta de la tecnología enfocado en crear sitios web modernos, funcionales y accesibles.</p>
         </section>
 
         <section id="habilidades">
-            <h2>Habilidades</h2>
+            <h2>Habilidades y Herramientas</h2>
             <ul>
-                <li>HTML5 & CSS3</li>
-                <li>JavaScript</li>
+                <li>HTML5 y CSS3</li>
+                <li>JavaScript (ES6+)</li>
+                <li>Git y GitHub</li>
                 <li>Bootstrap</li>
+            </ul>
+        </section>
+
+        <section id="experiencia">
+            <h2>Experiencia Laboral</h2>
+            <article>
+                <h3>Desarrollador Trainee - Tech Nova (2023 - Presente)</h3>
+                <p>Asistente en el desarrollo de interfaces de usuario y maquetación de correos electrónicos.</p>
+            </article>
+            <article>
+                <h3>Pasante IT - Soluciones Digitales (2022 - 2023)</h3>
+                <p>Apoyo en el mantenimiento correctivo de sitios corporativos y carga de datos.</p>
+            </article>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <ul>
+                <li><strong>E-commerce de Mascotas:</strong> Tienda virtual con carrito de compras funcional.</li>
+                <li><strong>App de Tareas:</strong> Herramienta para gestión de productividad personal.</li>
             </ul>
         </section>
     </main>
 
-    <footer>
+    <footer id="contacto">
+        <hr>
         <h2>Contacto</h2>
-        <p>Encontrame en: <a href="#">GitHub</a> | <a href="#">LinkedIn</a></p>
+        <form action="#" method="POST">
+            <div>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required>
+            </div><br>
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+            </div><br>
+            <div>
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            </div><br>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+
+        <br>
+        <p><strong>Redes Sociales:</strong></p>
+        <a href="https://github.com" target="_blank">GitHub</a> | 
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+
+        <p>&copy; 2026 - Portfolio Profesional (Trabajo Práctico #1)</p>
     </footer>
 
 </body>
